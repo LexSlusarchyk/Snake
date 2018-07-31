@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container text-center">
+  	<h1>My First Snake</h1>
+  </div>
+  <br>
+  <div class="container text-center">
+  	<button type="button" class="btn btn-info" 
+  			onclick="snake.turnSnake({x: 1});"
+  			>LEFT
+  	</button>
+  	<button type="button" class="btn btn-info"
+  			onclick="snake.turnSnake({y: 1});"
+  			>RIGHT
+  	</button>
+  </div>
+  <br>
+  <div class="container text-center">
+  	<table class="container text-center">
+  		<tbody id="board">	
+  		</tbody>
+  	</table>
+  </div>
+
+  <script src="snake.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

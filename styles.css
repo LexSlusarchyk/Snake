@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+table {
+	width: 604px;
+	height: 604px;
+	border: 2px solid black;
+}
+
+.board-box {
+	border: 1px solid black;
+}
+td {
+	padding: 10px;
+	border: 1px solid black;
+}
