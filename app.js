@@ -20,14 +20,14 @@ let snake = new Snake;
 let moveCounter = 0;
 function move() {
   moveCounter++;
-  snake.positionX++;
+  snake.move();
     setTimeout(function() {
-      if(moveCounter < 11) {
-        snake.renderSnake();
+      if(moveCounter < 21) {
+
         move();
       }
     }, 1000);
 }
-snake.renderSnake();
+
 move();
 
