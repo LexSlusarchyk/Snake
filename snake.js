@@ -17,8 +17,21 @@ class Snake {
     }
 
     move(direction){
-      this.position.x++;
+      //let defaltDirection = 1;
+      if(direction.x)this.positionX++;
+      if(direction.y)this.positionY++;
       console.log(this.position);
+    }
+
+    renderSnake(){
+        if(this.positionX >= 10 || this.positionY >= 10){
+            return alert('Game Over!');
+        }
+
+        let snakeBody = document.getElementById('x' + this.positionX + 'y' + this.positionY);
+        snakeBody.style.backgroundColor = 'red';
+
+        console.log(snakeBody);
     }
 
 }
